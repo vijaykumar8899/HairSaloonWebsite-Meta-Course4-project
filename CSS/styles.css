@@ -1,0 +1,267 @@
+body {
+  /* background-color: #ffe6e6; */
+  background-color: white;
+  font-family: "Markazi Text", serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+header {
+  background-color: #323232;
+  height: 5rem;
+  width: 100%;
+  text-align: right;
+  overflow: hidden;
+  position: fixed;
+  opacity: 1;
+  z-index: 1;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.navbar {
+  margin: 0 auto;
+  height: 100%;
+}
+
+.navbar img {
+  float: left;
+  height: 100%;
+  width: auto;
+  padding-left: 2rem;
+}
+
+.navbar ul {
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.navbar li {
+  list-style-type: none;
+  display: inline;
+  padding: 2rem;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.navbar li a {
+  font-family: "Markazi Text", serif;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.navbar li a:link {
+  color: #d0604c;
+}
+
+.navbar li a:hover {
+  color: #ffffff !important;
+  text-shadow: 2px 2px 8px #c7f2a4;
+}
+
+.navbar li a:active {
+  color: #d0604c;
+  background-color: #7f8487;
+}
+
+.navbar li a:visited {
+  color: #d0604c;
+}
+
+main {
+  padding-top: 6rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+section {
+  display: flex;
+}
+
+article {
+  flex: 1;
+  padding: 1rem;
+  margin: 0.75rem;
+}
+
+footer {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer div {
+  background-color: #323232;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+footer img {
+  width: 8rem;
+  height: auto;
+}
+
+.section1 {
+  position: relative;
+  height: 10%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section1::before {
+  content: "";
+  /* background-image: url("../Assets/Artboard 22.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute; */
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.7;
+  border-radius: 20px;
+  z-index: 0;
+}
+
+.section1 article h1,
+.section1 article p {
+  position: relative;
+  color: black;
+  line-height: 0.9;
+  text-align: center;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.section1 article h1 {
+  margin-bottom: 0;
+  text-shadow: 5px 5px 8px #ffc2c2;
+}
+
+.section1 article p {
+  font-size: 23px;
+  text-shadow: 2px 2px 8px white;
+}
+
+.section1 article img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* CSS for the article and its child div */
+.section2 {
+  /* height: 250px;
+  width: 500px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border-radius: 20px;
+  border: 5px solid #d0604c;
+  padding: 20px;
+}
+
+/* CSS for the anchor tag */
+.section2 a {
+  color: red;
+  text-decoration: underline; /* Add underline */
+  font-size: 1.2rem; /* Add font size */
+  text-align: center; /* Center the content */
+  margin-bottom: 10px; /* Add space between <a> and <p> */
+}
+
+/* CSS for the paragraph tag */
+.section2 p {
+  color: white; /* Adjust color */
+  font-size: 1.1rem; /* Add font size */
+  text-align: center; /* Center the content */
+}
+
+.sizedbox {
+  height: 100px;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+
+  height: 30px;
+  width: 250px;
+  border-radius: 20px;
+  border: 5px solid #d0604c;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 100px;
+  border-radius: 05px;
+  border: 1px solid #d0604c;
+  margin-left: 50px;
+}
+
+.section3 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.section3 > article {
+  background-color: black;
+  border-radius: 20px;
+  border: 5px solid #d0604c;
+}
+
+.section3 article h2,
+.section3 article p {
+  color: white;
+  font-size: 1.1rem;
+}
+
+.section3 article h2 {
+  font-size: 2.1rem;
+}
+
+article {
+  flex: 1;
+  border-radius: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+article p + div {
+  display: flex;
+  flex: 1;
+  gap: 2rem 1rem;
+}
+
+article a:link {
+  color: #cdf0ea;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+article a:hover {
+  text-shadow: 2px 2px 8px #c7f2a4;
+  text-decoration: underline;
+}
+
+article a:active {
+  color: #cdf0ea;
+  background-color: #7f8487;
+}
